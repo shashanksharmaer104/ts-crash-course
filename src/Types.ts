@@ -59,5 +59,31 @@ console.log("Object values:", user.name);
 // Type Assertion
 let cid: any = 99;
 //let customerId = <number>cid; //first way
-let customerId = cid as number;
+let customerId = cid as number;   //second way
 console.log("CID:", customerId)
+
+// Function
+function add(x: number, y: number): number {
+    return x + y;
+}
+
+console.log(add(2,3));
+
+// Void function
+function log(message: string | number): void {
+    console.log(message);
+}
+
+// Interface
+interface UserInter {
+    id: number,
+    readonly name: string, // make constant
+    age?: number
+}
+
+let user1: UserInter = {
+    id: 1,
+    name: 'Shash',
+}
+
+user1.id = 8;

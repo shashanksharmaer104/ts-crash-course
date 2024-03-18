@@ -46,5 +46,19 @@ console.log("Object values:", user.name);
 // Type Assertion
 let cid = 99;
 //let customerId = <number>cid; //first way
-let customerId = cid;
+let customerId = cid; //second way
 console.log("CID:", customerId);
+// Function
+function add(x, y) {
+    return x + y;
+}
+console.log(add(2, 3));
+// Void function
+function log(message) {
+    console.log(message);
+}
+let user1 = {
+    id: 1,
+    name: 'Shash',
+};
+user1.id = 8;
