@@ -8,8 +8,10 @@ let anyVar = 'HEllo'; // any type of value can be added
 let numArray = [1, 2, 3, 4, 5];
 let stringArray = ["a", "b", "c"];
 let anyArray = [1, "Shashank", true];
+let mixArray = [1, 'A', false, [1, 2, 3, 'B', true]];
 // Tuple
 let person = [1, "Person", false];
+console.log("Tuple value: " + person[1]);
 let personArray;
 personArray = [
     [1, "Person", false],
@@ -36,3 +38,13 @@ var Direction2;
     Direction2["Right"] = "RIGHT";
 })(Direction2 || (Direction2 = {}));
 console.log(Direction2.Right);
+let user = {
+    id: 1,
+    name: 'Shashank'
+};
+console.log("Object values:", user.name);
+// Type Assertion
+let cid = 99;
+//let customerId = <number>cid; //first way
+let customerId = cid;
+console.log("CID:", customerId);
